@@ -1,6 +1,6 @@
 from golang:1.12 as builder
 env GO111MODULE=on
-workdir github.ihs.demonware.net/scratch/cfs-cpu-burn
+workdir github.com/ottoyiu/cfs-cpu-burn
 copy . .
 run make target/cmd/cfs-cpu-burn && cp target/cmd/cfs-cpu-burn /app
 
